@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div className="App">
-
       {!connected &&
         <LoginForm
           connect={connect}
@@ -25,7 +24,6 @@ function App() {
           sendMessage={sendMessage}
         />
       }
-
     </div>
   )
 }
