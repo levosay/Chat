@@ -1,7 +1,23 @@
-.wrapper
+.wrapperScroll
 	width: 100%
+	border-radius: 10px
+	background: var(--light)
+
+.wrapper
+	height: 520px
 	display: flex
 	flex-direction: column
-	padding: 40px
-	border-radius: 20px
-	background: var(--light)
+	margin: 6px 2px
+	padding: 20px 40px
+	overflow-y: auto
+
+	&::-webkit-scrollbar
+		width: 8px
+
+	&::-webkit-scrollbar-thumb
+		background-color: var(--primary-lght)
+		border-radius: 20px
+
+	&::-webkit-scrollbar-track
+		background: transparent
+		cursor: pointer
