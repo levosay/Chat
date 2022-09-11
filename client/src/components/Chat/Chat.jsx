@@ -11,8 +11,6 @@ export const Chat = ({ messages, sendMessage }) => {
       <MessageForm
         handlerClick={sendMessage}
       />
-
-
     </div>
   )
 }

@@ -7,7 +7,7 @@ function App() {
     connect,
     sendMessage,
     connected,
-    messages,
+    messages
   } = useConnect()
 
   return (

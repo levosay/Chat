@@ -1,6 +1,6 @@
+import { useEffect } from 'react'
 import { Message } from '@components'
 import classes from './ChatMassages.module.sass'
-import {useEffect} from 'react'
 
 export const ChatMassages = ({ massages }) => {
   const massageList = massages &&
@@ -27,6 +27,5 @@ export const ChatMassages = ({ massages }) => {
         {massageList}
       </div>
     </div>
-
   )
 }
