@@ -1,0 +1,22 @@
+.wrapper
+	display: flex
+	align-items: center
+	padding: 24px 0
+
+	&:not(:last-child)
+		border-bottom: 1px solid var(--dark)
+
+.author
+	display: inline-block
+	width: 150px
+	margin-right: 24px
+	font-size: 18px
+	font-weight: 700
+	color: var(--primary-lght)
+	border-right: 1px solid var(--dark)
+	overflow: hidden
+	white-space: nowrap
+	text-overflow: ellipsis
+
+.text
+	font-size: 16px

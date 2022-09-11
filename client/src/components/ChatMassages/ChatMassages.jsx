@@ -1,16 +1,21 @@
-import Message from '@components/Message/Message.jsx'
+import { Message } from '@components'
 import classes from './ChatMassages.module.sass'
 
-const ChatMassages = ({massages}) => {
+export const ChatMassages = ({massages}) => {
   const massageList = massages &&
-    massages.map(mes => <Message message={mes}/>)
+    massages.map(mess =>
+      <Message
+        key={mess.id}
+        author={mess.username}
+        message={mess.message}
+      />
+    )
+
+  console.log('massages ', massages)
 
   return (
     <div className={classes.wrapper}>
       {massageList}
-      ChatMassages
     </div>
   )
 }
-
-export default ChatMassages

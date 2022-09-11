@@ -1,11 +1,18 @@
-import ChatMassages from '../ChatMassages/ChatMassages.jsx'
+import { ChatMassages, MessageForm } from '@components'
+import classes from './Chat.module.sass'
 
-const Chat = () => {
+export const Chat = ({ messages, sendMessage }) => {
   return (
-    <div>
-      <ChatMassages />
+    <div className={classes.wrapper}>
+      <ChatMassages
+        massages={messages}
+      />
+
+      <MessageForm
+        handlerClick={sendMessage}
+      />
+
+
     </div>
   )
 }
-
-export default Chat

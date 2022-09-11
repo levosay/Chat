@@ -1,9 +1,10 @@
-const Message = ({message}) => {
+import classes from './Massage.module.sass'
+
+export const Message = ({ author, message }) => {
   return (
-    <div>
-      Message
+    <div className={classes.wrapper}>
+      <span className={classes.author}>{author}</span>
+      <span className={classes.text}>{message}</span>
     </div>
   )
 }
-
-export default Message
